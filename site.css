@@ -261,7 +261,8 @@ blockquote {
 }
 
 #columns {
-    margin: 10px 0px 10px 240px;
+	/* was margin: 10px 0px 10px 240px */
+    margin: 10px 0px 10px 0px;
     clear: both;
 }
 
@@ -1704,3 +1705,14 @@ body, #breadcrumbs, #footer {
  *	URL: http://prism.talis.com/
  *	
  ****************************************************************/
+
+
+
+/*****************************************************************
+ * Sussex Catalogue
+ */
+ 
+ /* over rides a prism default setting which knocks down the Sussex template */
+ #page{
+    top: 0px;
+}
