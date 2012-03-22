@@ -1717,6 +1717,8 @@ body, #breadcrumbs, #footer {
     top: 0px;
 }
 
+
+/* for the Prism header links */
 #headerLinks {
 	position:static;text-align:left;top:0;max-width:none;min-width:inherit;width:auto ; }
 	#headerLinks ul { position:static;right:0;width:auto; }
@@ -1761,3 +1763,6 @@ body, #breadcrumbs, #footer {
 			#headerLinks .userLinks a:hover {
 				color:#424753 ;
 				text-decoration:underline; }
+				
+/* Hide one of the online resources links in catalogue records, reccommended by Captia */
+#details ul.eResourceLinks {display:none;}
