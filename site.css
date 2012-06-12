@@ -1766,3 +1766,21 @@ body, #breadcrumbs, #footer {
 				
 /* Hide one of the online resources links in catalogue records, reccommended by Captia */
 #details ul.eResourceLinks {display:none;}
+
+/* how much space the search box has around it */
+#pageHeader {
+	height:60px !important;
+}
+
+/* because without this it is a little too the left and too far down (with a shadown of where it should be */
+/* was 10px */
+#page {
+	padding:1px !important;
+}
+
+/* search box */
+#s, #searchsubmit {
+	font-size:1.1em;
+	line-height: 1.6em;
+}
+
