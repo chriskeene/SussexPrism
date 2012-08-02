@@ -1,0 +1,83 @@
+<p>You can also try your search for "{{ query }}" on some other
+catalogues:</p>
+<!--
+<ul>
+<li><a href="http://copac.ac.uk/search?&any={{ query|url_encode }}">Search for "{{ query }}" on COPAC</a></li>
+<li><a href="http://explore.bl.uk/primo_library/libweb/action/search.do?mode=Basic&vid=BLVU1&vl(freeText0)={{ query|url_encode }}&fn=search&tab=local_tab&">
+Search for "{{ query }}" on the British Library OPAC</a></li>
+<li><a href="http://www.google.com/search?tbm=bks&q={{ query|
+url_encode }}">Search for "{{ query }}" on Google Books</a></li>
+</ul>
+-->
+
+<div style="display:inline;">
+
+<a href="http://copac.ac.uk/search?&any={{ query|url_encode }}">
+<div class="noresultbox">
+<img src="http://copac.ac.uk/img/85x67_copac.gif" alt="Search Copac" title="Search Copac">
+<p>Search COPAC for "{{ query }}" </p>
+</div>
+</a>
+
+<a href="http://explore.bl.uk/primo_library/libweb/action/search.do?mode=Basic&vid=BLVU1&vl(freeText0)={{ query|url_encode }}&fn=search&tab=local_tab&">
+<div class="noresultbox">
+<img src="http://www.bl.uk/images/logo68web.gif" width="36" height="68" alt="Link to British Library website" border="0">
+<p>Search the British Library for "{{ query }}" </p>
+</div>
+</a>
+
+<a href="http://sabre.sussex.ac.uk/vufindsmu/Search/Results?lookfor={{ query|url_encode }}&type=AllFields&submit=Find">
+<div class="noresultbox">
+<img src="http://sabre.sussex.ac.uk/vufindsmu/interface/themes/default/images/sabre-vsmall.png" alt="Link to sabre" border="0">
+<p>Search the University of Brighton Catalogue for "{{ query }}", using sabre</p>
+</div>
+</a>
+
+
+<a href="http://www.google.com/search?tbm=bks&q={{ query|url_encode }}">
+<div class="noresultbox">
+<img src="http://books.google.co.uk/intl/en/images/logos/books_logo_lg.png" alt="Link to Google Books" width="138px" height="55px" border="0">
+<p>Search Google Books for "{{ query }}" </p>
+</div>
+</a>
+
+<a href="http://www.worldcat.org/search?qt=worldcat_org_all&q={{ query|url_encode }}">
+<div class="noresultbox">
+<img src="http://static1.worldcat.org/wcpa/rel20120711/images/logo_wcmasthead_en.png">
+<p>Search Worldcat for "{{ query }}" </p>
+</div>
+</a>
+
+<a href="http://www.amazon.co.uk/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={{ query|url_encode }}&x=0&y=0">
+<div class="noresultbox">
+<img src="assets/-/images/amazon.jpg">
+<p>Search Amazon for "{{ query }}"</p>
+</div>
+</a>
+
+<a href="http://www.jscampus.co.uk/shop/search.asp?SearchType=quick&SearchResults=Y&searchtext={{ query|url_encode }}&submit.x=0&submit.y=0&showall=Y&BICString=">
+<div class="noresultbox">
+<img src="assets/-/images/johnsmith.jpg" width="71" height="62">
+<p>Search John Smith for "{{ query }}" </p>
+</div>
+</a>
+<!--
+<a href="http://primo-service.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?dscnt=0&frbg=&scp.scps=000000101&tab=default_tab&dstmp=1343824122259&srt=rank&ct=search&mode=Basic&dum=true&indx=1&vl(freeText0)={{ query|url_encode }}&fn=search&vid=44SUS_TEST">
+<div class="noresultbox">
+<img src="http://www.johnsmith.co.uk/images/jslogo.gif">
+<p>Search articles and more on the Electronic Library for "{{ query }}"</p>
+</div>
+</a>
+-->
+<a href="http://specialcollections.lib.sussex.ac.uk/CalmView/Overview.aspx?s={{ query|url_encode }}">
+<div class="noresultbox">
+<img src="assets/-/images/specialcollections.jpg">
+<p>Search our Special Collections for "{{ query }}"</p>
+</div>
+</a>
+
+</div>
+<div style="clear:both"></div>
+<p>Looking for a journal, article or online resource such as Jstor or Westlaw? Use the <a href="http://www.sussex.ac.uk/library/electronic/">Electronic Library</a></p>
+ 
+<p>Search our <a href="http://primo-service.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?dscnt=0&frbg=&scp.scps=000000101&tab=default_tab&dstmp=1343824122259&srt=rank&ct=search&mode=Basic&dum=true&indx=1&vl(freeText0)={{ query|url_encode }}&fn=search&vid=44SUS_TEST">Electronic Library for  "{{ query }}"</a></p>

@@ -69,7 +69,7 @@ img {
 }
 
 #breadcrumbs li {
-    background: transparent url("images/breadcrumb_arrow.gif")
+    background: transparent url("http://www.sussex.ac.uk/assets/css/images/breadcrumb_arrow.gif")
         no-repeat scroll right center;
 }
 
@@ -79,7 +79,7 @@ img {
 
 #footer {
     border-top-width: 1px;
-    background-image: url("images/gen_footer_bottom.png");
+    background-image: url("http://www.sussex.ac.uk/assets/css/images/gen_footer_bottom.png");
     background-repeat: no-repeat;
     background-position: left bottom;
 }
@@ -102,7 +102,7 @@ img {
 
 #header #search_submit {
     border-left: none;
-    background: transparent url("images/magglass.gif")
+    background: transparent url("http://www.sussex.ac.uk/assets/css/images/magglass.gif")
         no-repeat scroll center;
     cursor: pointer;
 }
@@ -596,7 +596,7 @@ br.clear {
 /* Feature boxes */
 
 div.feature {
-    background: transparent url("images/rounded_bottomleft.png") no-repeat scroll bottom left;
+    background: transparent url("http://www.sussex.ac.uk/assets/css/images/rounded_bottomleft.png") no-repeat scroll bottom left;
     font-size: 0.95em;
     line-height: 1.3em;
     padding: 8px;
@@ -639,12 +639,12 @@ div.feature p {
 /* addded for mouse over feature boxes - all such boxes should start with a h1 - eg /study */
 
 a.feature:hover div.feature {
-    background-image: url("images/opacity10.png") !important;
+    background-image: url("http://www.sussex.ac.uk/assets/css/images/opacity10.png") !important;
     background-repeat: repeat;
 }
 
 a.feature{
-    background: transparent url("images/rounded_bottomleft.png") no-repeat scroll bottom left;
+    background: transparent url("http://www.sussex.ac.uk/assets/css/images/rounded_bottomleft.png") no-repeat scroll bottom left;
     padding: 8px;
     margin: 0px 0px 10px 0px;
     text-decoration: none;
@@ -658,7 +658,7 @@ a.feature div.feature{
 }
 
 a.feature h1 {
-    background: transparent url("images/rounded_topright.png") no-repeat scroll right top;
+    background: transparent url("http://www.sussex.ac.uk/assets/css/images/rounded_topright.png") no-repeat scroll right top;
     line-height: 1.2em;
     margin: -8px -8px 2px 3px;
     padding: 16px 8px 0px 0px;
@@ -666,7 +666,7 @@ a.feature h1 {
 }
 
 div.feature h4 {
-    background: transparent url("images/feature_top.png") no-repeat scroll right top;
+    background: transparent url("http://www.sussex.ac.uk/assets/css/images/feature_top.png") no-repeat scroll right top;
     margin: -8px -8px 10px -8px;
     padding: 9px;
     font-size: 1.3em;
@@ -678,7 +678,7 @@ div.feature ul, div.feature ol {
 }
 
 body.external div.feature h4 {
-    background-image: url("images/rounded_topright.png");
+    background-image: url("http://www.sussex.ac.uk/assets/css/images/rounded_topright.png");
 }
 
 body.home.external #content div.feature, body.home.external #content div.feature h4 {
@@ -847,7 +847,7 @@ div.broadcast.half ul {
 
 .broadcast p.date {
     float: right;
-    background: url("/includes/images/internal/date.gif");
+    background: url("/images/internal/date.gif");
     width: 46px;
     height: 50px;
     margin: 5px;
@@ -908,7 +908,7 @@ ul.navbar li {
 }
 
 ul.navbar li:hover {
-    background-image: url("images/opacity10.png");
+    background-image: url("http://www.sussex.ac.uk/assets/css/images/opacity10.png");
 }
 
 ul.navbar li.bottom {
@@ -934,7 +934,7 @@ ul.navbar a {
 }
 
 ul.navbar li.bottom.left a {
-    background: transparent url("images/rounded_bottomleft.png") no-repeat scroll left bottom;
+    background: transparent url("http://www.sussex.ac.uk/assets/css/images/rounded_bottomleft.png") no-repeat scroll left bottom;
 }
 
 ul.navbar li.bottom.left {
@@ -942,7 +942,7 @@ ul.navbar li.bottom.left {
 }
 
 ul.navbar li.bottom.right a {
-    background: transparent url("images/rounded_bottomright.png") no-repeat scroll right bottom;
+    background: transparent url("http://www.sussex.ac.uk/assets/css/images/rounded_bottomright.png") no-repeat scroll right bottom;
 }
 
 ul.navbar li.bottom.right {
@@ -967,7 +967,7 @@ div.banner p {
     position: absolute;
     top: 0px;
     right: -10px;
-    background: transparent url("images/rounded_topright.png") no-repeat scroll left top;
+    background: transparent url("http://www.sussex.ac.uk/assets/css/images/rounded_topright.png") no-repeat scroll left top;
     height: 10px;
     width: 10px;
     padding-left: 10px;
@@ -986,7 +986,7 @@ div.banner_quote img {
 }
 
 div.banner_quote p, div.banner_video p  {
-    background: #49a1bb url("images/rounded_topright.png") no-repeat scroll right top;
+    background: #49a1bb url("http://www.sussex.ac.uk/assets/css/images/rounded_topright.png") no-repeat scroll right top;
     color: #ffffff;
     padding: 10px;
     width: 375px;
@@ -1033,7 +1033,7 @@ div.banner_quote .citation, div.banner_video .citation {
     bottom: 0px;
     left: 0px;
     width: 835px;
-    background: transparent url("images/slideshow_back.png");
+    background: transparent url("http://www.sussex.ac.uk/assets/css/images/slideshow_back.png");
     padding: 5px 100px 5px 5px;
     font: normal 1.6em Georgia, "Times New Roman", Times, serif;
     color: #ffffff;
@@ -1063,11 +1063,11 @@ div.banner_quote .citation, div.banner_video .citation {
 }
 
 .slideshow div img:hover {
-    background: url("images/square_half_filled.gif");
+    background: url("http://www.sussex.ac.uk/assets/css/images/square_half_filled.gif");
 }
 
 .slideshow div img.active, .slideshow div img.active:hover {
-    background: url("images/square_filled.gif");
+    background: url("http://www.sussex.ac.uk/assets/css/images/square_filled.gif");
 }
 
 
@@ -1140,7 +1140,7 @@ p.caption, p.caption a {
 }
 
 a.vcard, a.vcard-mobile {
-    background: #ffffff url("/includes/images/icons/vcard.png") no-repeat;
+    background: #ffffff url("http://www.sussex.ac.uk/includes/images/icons/vcard.png") no-repeat;
     display: block;
     height: 16px;
     font-size: 0.9em;
@@ -1149,11 +1149,11 @@ a.vcard, a.vcard-mobile {
 }
 
 a.vcard-mobile {
-    background-image: url(/includes/images/icons/phone.png);
+    background-image: url(http://www.sussex.ac.uk/includes/images/icons/phone.png);
 }
 
 blockquote {
-    background: url(images/quotation_mark_left.png) no-repeat top left;
+    background: url(http://www.sussex.ac.uk/images/quotation_mark_left.png) no-repeat top left;
     padding: 5px 0 0 40px;
     margin: 0 0 15px 0;
 }
@@ -1167,7 +1167,7 @@ blockquote {
 }
 
 #nav ul.plain li a:hover {
-	background-image: url("images/ex_leftnav_sub_active.gif") !important;
+	background-image: url("http://www.sussex.ac.uk/assets/css/images/ex_leftnav_sub_active.gif") !important;
 }
 
 ul.horizontal {
@@ -1397,7 +1397,7 @@ form.style1 .button:hover, form.style2 .button:hover {
 }	
 	
 h3.slide_toggle_link {
-    background: #004E5B url(/includes/images/external/corners/banner/banner_corner_top_right.png) top right no-repeat;
+    background: #004E5B url(http://wwww.sussex.ac.uk/includes/images/external/corners/banner/banner_corner_top_right.png) top right no-repeat;
     color: white;
      padding: 10px;
      margin: 0 0 3px 0;
@@ -1549,30 +1549,30 @@ body, #breadcrumbs, #footer {
 }
 
 #page {
-    background-image: url("images/in_page_bottom.png");
+    background-image: url("http://www.sussex.ac.uk/assets/css/images/in_page_bottom.png");
 }
 
 #header {
-    background-image: url("images/in_page_top.png");
+    background-image: url("http://www.sussex.ac.uk/assets/css/images/in_page_top.png");
 }
 
 #topnav li {
-    background: #095972 url("images/in_topnav.png") no-repeat scroll top left;    
+    background: #095972 url("http://www.sussex.ac.uk/assets/css/images/in_topnav.png") no-repeat scroll top left;    
     border-bottom: 1px solid #ffffff;
     border-radius: 12px 12px 0px 0px;
 }
 
 #topnav li a {
-    background: transparent url("images/rounded_topright.png") no-repeat scroll top right;
+    background: transparent url("http://www.sussex.ac.uk/assets/css/images/rounded_topright.png") no-repeat scroll top right;
 }
 
 #topnav li:hover {
     background-color: #2b697c;
-    background-image: url("images/in_topnav_hover.png");
+    background-image: url("http://www.sussex.ac.uk/assets/css/images/in_topnav_hover.png");
 }
 
 #topnav li.active {
-    background-image: url("images/in_topnav_active.png");
+    background-image: url("http://www.sussex.ac.uk/assets/css/images/in_topnav_active.png");
 }
 
 #subnav, #topnav li.active {
@@ -1584,7 +1584,7 @@ body, #breadcrumbs, #footer {
 }
 
 #subnav li.first a {
-    background: transparent url("images/rounded_topleft.png") no-repeat scroll top left;
+    background: transparent url("http://www.sussex.ac.uk/assets/css/images/rounded_topleft.png") no-repeat scroll top left;
 }
 
 #subnav li.active a, #subnav li a:hover {
@@ -1608,7 +1608,7 @@ body, #breadcrumbs, #footer {
 }
 
 #nav li a:hover, #nav li.active a {
-    background: transparent url("images/breadcrumb_arrow.gif")
+    background: transparent url("http://www.sussex.ac.uk/assets/css/images/breadcrumb_arrow.gif")
         no-repeat scroll 8px center;
 }
 
@@ -1784,3 +1784,25 @@ body, #breadcrumbs, #footer {
 	line-height: 1.6em;
 }
 
+/* scometimes we get really long summaries in the marc record. this puts a limit on the size and adds a scroll box. */
+div.summarydetail {
+	overflow:auto;
+	max-height: 300px;
+}
+
+/* used on the no result page, to show different search options */
+div.noresultbox {
+	width:200px;
+	border: 1px solid #CCC;
+	float:left;
+	padding:8px;
+	height:150px;
+	overflow: hidden;
+}
+div.noresultbox p {
+	font-size: 95%;
+}
+
+div.noresultbox:hover { 
+	background-color:#E1E8EB;
+}
