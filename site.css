@@ -1730,39 +1730,42 @@ body, #breadcrumbs, #footer {
 	height:31px;
 	margin:0; }
 	
-	#headerLinks ul {
-		margin: 0;
-		padding: 0; }
+#headerLinks ul {
+	margin: 0;
+	padding: 0; }
+	
 		
-			
-		#headerLinks ul.userLinks li {
-			border-left:none; }
+#headerLinks ul.userLinks li {
+		border-left:none; 
+}
+	
+#headerLinks ul li {
+	display:block;
+	float:left;
+	list-style:none;
+	margin:0;
+	padding:0; 
+}
+	
+#headerLinks .accessibilityLinks { float:left; /* allows both menus on a single line */ }
+
+#headerLinks .accessibilityLinks a, #headerLinks .userLinks a {
+		border-bottom:none;
+		color:#424753;
+		display: block;
+		font-size:14px;
+		line-height:31px;
+		padding:0 15px; 
+}
 		
-	#headerLinks ul li {
-		display:block;
-		float:left;
-		list-style:none;
-		margin:0;
-		padding:0; }
+#headerLinks .accessibilityLinks li:first-child a {
+			border-left:none; 
+}
 		
-		#headerLinks .accessibilityLinks { float:left; /* allows both menus on a single line */ }
- 
-		#headerLinks .accessibilityLinks a,
-		#headerLinks .userLinks a {
-			border-bottom:none;
-			color:#424753;
-			display: block;
-			font-size:14px;
-			line-height:31px;
-			padding:0 15px; }
-			
-			#headerLinks .accessibilityLinks li:first-child a {
-				border-left:none; }
-			
-			#headerLinks .accessibilityLinks a:hover,
-			#headerLinks .userLinks a:hover {
-				color:#424753 ;
-				text-decoration:underline; }
+#headerLinks .accessibilityLinks a:hover, #headerLinks .userLinks a:hover {
+			color:#424753 ;
+			text-decoration:underline; 
+}
 				
 /* Hide one of the online resources links in catalogue records, reccommended by Captia */
 #details ul.eResourceLinks {display:none;}
@@ -1774,7 +1777,7 @@ body, #breadcrumbs, #footer {
 
 /* because without this it is a little too the left and too far down (with a shadown of where it should be */
 /* was 10px */
-#page {
+#ppppage {
 	padding:1px !important;
 }
 
