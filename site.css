@@ -1818,3 +1818,7 @@ a, #topnav a, #subnav a, #nav a, #breadcrumbs a {
 	font-weight:normal !important;
 	font-color:red !important;
 }
+
+.Note  li {
+	color: #244857;
+}
