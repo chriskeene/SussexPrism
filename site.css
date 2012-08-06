@@ -1819,6 +1819,31 @@ a, #topnav a, #subnav a, #nav a, #breadcrumbs a {
 	font-color:red !important;
 }
 
+/* show notes in item details in the standard font color */
 .Note  li {
 	color: #244857;
+}
+
+/* how to show the item availability informantion */
+ul.options h3 {
+	font-size: 1.1em;
+	padding-top:0px;
+}
+
+#breadCrumb {
+	display: inline;
+	left: 10px;
+	position: absolute;
+	top: 207px;
+}
+
+#searchBoxx {
+	display: inline;
+	left: 240px;
+	position: absolute;
+	top: 220px;
+}	
+
+#searchbox {
+	margin-top: 18px;
 }
