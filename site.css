@@ -1819,3 +1819,8 @@ a:hover , #breadcrumbs a:hover {
 a, #topnav a, #subnav a, #nav a, #breadcrumbs a {
     text-decoration: none;
 }
+
+#header label {
+	font-weight:normal !important;
+	font-color:red;
+}
