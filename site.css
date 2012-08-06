@@ -1830,12 +1830,14 @@ ul.options h3 {
 	padding-top:0px;
 }
 
-/* put the breadcrumbs striaght after the header, and before search. */
-#breadCrumb {
-	display: inline;
+/* put the breadcrumbs straight after the header, and before search. */
+#page #breadCrumb {
+	ddfdisplay: inline;
 	left: 10px;
 	position: absolute;
 	top: 207px;
+}
+#breadCrumb span {
 	font-size: 0.8em;
 }
 
@@ -1851,4 +1853,12 @@ ul.options h3 {
 upwards using a relative posistion will leave a blnk space where they originally were) */
 #searchBox {
 	margin-top: 18px;
+}
+
+.branches {
+	display: none;
+}
+
+#page input.save:hover {
+	text-decoration: underline;
 }
