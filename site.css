@@ -1,4 +1,4 @@
-@import url("base.css");
+/* @import url("base.css"); */
 /***************************************************************
  * Sussex.css
  */
@@ -1808,4 +1808,14 @@ div.noresultbox p {
 
 div.noresultbox:hover { 
 	background-color:#E1E8EB;
+}
+
+/* Links should not be underlined - unless hover */
+/* this reverses what is provided in the Sussex css files. */
+a:hover , #breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+a, #topnav a, #subnav a, #nav a, #breadcrumbs a {
+    text-decoration: none;
 }
