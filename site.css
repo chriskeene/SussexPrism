@@ -1824,19 +1824,22 @@ a, #topnav a, #subnav a, #nav a, #breadcrumbs a {
 	color: #244857;
 }
 
-/* how to show the item availability informantion */
+/* how to show the item availability information */
 ul.options h3 {
 	font-size: 1.1em;
 	padding-top:0px;
 }
 
+/* put the breadcrumbs striaght after the header, and before search. */
 #breadCrumb {
 	display: inline;
 	left: 10px;
 	position: absolute;
 	top: 207px;
+	font-size: 0.8em;
 }
 
+/* unused */
 #searchBoxx {
 	display: inline;
 	left: 240px;
@@ -1844,6 +1847,8 @@ ul.options h3 {
 	top: 220px;
 }	
 
-#searchbox {
+/* put the search box in the empty gap left by the breadcrumbes (which, being moved 
+upwards using a relative posistion will leave a blnk space where they originally were) */
+#searchBox {
 	margin-top: 18px;
 }
