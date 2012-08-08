@@ -27,18 +27,17 @@ $=jQuery=PRISM.jQuery;
 
 </script>
 
-<!-- interface hacks -->
+<!-- interface jquery hacks -->
 <script>
  $(function () {
-    // ensures the right hand side of the top bar looks like the left hand side, 
-    // including a line between each link.
-    //$('.userLinks').addClass('accessibilityLinks');
 	
 	if(PRISM.mobile){
 		//code to run mobile essential extensions
 		$('#appTitle > a').text('University of Sussex Catalogue');
 		// change mobile tag line
 		$(".tagLine").text('Welcome to the University of Sussex Library Catalogue.');
+		// if it's the homepage lets have extra text below search box... yes lets.
+		$('#index #page #pageContent').after('<p>search for books, journals and more.</p>'); 
 	}
 	else{
 		//code to run normally
