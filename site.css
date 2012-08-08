@@ -1891,6 +1891,8 @@ upwards using a relative posistion will leave a blnk space where they originally
 }
 
 
+
+
 }
 
 @media only screen and (max-width: 480px), only screen and (max-width: 800px) and (orientation: landscape) {
@@ -1898,4 +1900,9 @@ upwards using a relative posistion will leave a blnk space where they originally
 	#page #breadCrumb {
 		/* position:static; */
 		display: none;
+	}
+	
+	/* welcome on homepage looks disjointed, lines too far away from each other */
+	#page #pageHeader div.tagLine {
+		line-height: 1.5;
 	}
