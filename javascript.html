@@ -5,7 +5,7 @@ $=jQuery=PRISM.jQuery;
 
 
 <!-- Juice 0.7 Warning! Removing the following will disable Juice Extensions -->  
-<!-- <script type="text/javascript" src="assets/-/js/jquery-1.4.4.min.js"></script>  -->
+<script type="text/javascript" src="assets/-/js/jquery-1.4.4.min.js"></script> 
 <script type="text/javascript" src="assets/-/js/juice.js"></script>
 <script type="text/javascript" src="assets/-/js/metadefs/talis_prism_metadef.js"></script>
 <script type="text/javascript" src="assets/-/js/extend_my_prism.js"></script>
@@ -29,7 +29,20 @@ $=jQuery=PRISM.jQuery;
 
 <!-- interface hacks -->
 <script>
+ $(function () {
     // ensures the right hand side of the top bar looks like the left hand side, 
     // including a line between each link.
     $('.userLinks').addClass('accessibilityLinks');
+	
+	if(PRISM.mobile){
+		//code to run mobile essential extensions
+		$('#appTitle > a').text('University of Sussex Catalogue');
+		// change mobile tag line
+		$(".tagLine").text('Welcome to the University of Sussex Library Catalogue.');
+	}
+	else{
+		//code to run normally
+	}
+	
+});
 </script>
