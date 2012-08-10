@@ -1890,7 +1890,12 @@ upwards using a relative posistion will leave a blnk space where they originally
 	padding: 0 10px;
 }
 
-
+/* this was in the javascript as a style attribute - but this was stopping us over-riding it for printing
+   - because the style attribute has higher precedence. */
+#GBSPanel {
+	display: block; 
+	width: 100%;
+}
 
 
 }
@@ -1906,3 +1911,4 @@ upwards using a relative posistion will leave a blnk space where they originally
 	#page #pageHeader div.tagLine {
 		line-height: 1.5;
 	}
+

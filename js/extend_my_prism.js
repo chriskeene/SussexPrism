@@ -64,7 +64,8 @@ function itemPage(){
 
     if($.juice.hasMeta()) {   
     	//add htmlboilerplate
-	    var div = '<div id="GBSPanel" style="display: block; width: 100%">' + 
+		// was <div id="GBSPanel" style="display: block; width: 100%">
+	    var div = '<div id="GBSPanel" class="notprint">' + 
 	    	'<h2 class="title">Look Inside</h2>' + 
 	    	'<div id="GBSViewer" style="width: 100%; height: 800px"></div>' + 
 	    	'</div>';
@@ -81,18 +82,17 @@ function itemPage(){
 
         //copac test
 
- //    $('#itemActions').append('<div class="juiceOtherSources"><h2>Other Sources</h2></div>');
-//	new copacJuice('.juiceOtherSources', 'http://copac.ac.uk/img/85x67_copac.gif','Search Copac');
+		//    $('#itemActions').append('<div class="juiceOtherSources"><h2>Other Sources</h2></div>');
+		//	new copacJuice('.juiceOtherSources', 'http://copac.ac.uk/img/85x67_copac.gif','Search Copac');
 
-	//John Smith Bookshop
-//new JohnSmithJuice('.juiceOtherSources', 'http://www.johnsmith.co.uk/images/jslogo.gif','Search the University of Sussex Bookshop');
-
-
+		//John Smith Bookshop
+		//new JohnSmithJuice('.juiceOtherSources', 'http://www.johnsmith.co.uk/images/jslogo.gif','Search the University of Sussex Bookshop');
     }  
 	timeMsg();  
 }
 
-		// Link to Aspire Lists
+
+// Link to Aspire Lists
 function readingList() {
 new AspireListJuice('#itemActions','append','http://liblists.sussex.ac.uk', {title:'Reading Lists', style:'margin-bottom:1em;'});
 }
