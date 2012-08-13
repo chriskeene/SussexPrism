@@ -1901,9 +1901,21 @@ upwards using a relative posistion will leave a blnk space where they originally
 }
 
 @media print {
+	/* mostly - don't show certain things when printing */
 	.rated {
 		display: none;
 	}
+	
+	/* failed attempt to show shelfmark when no items currently available */
+	/* needs to be removed at somepoint */
+	#unavailability .options table {
+		display: block !important;
+	}
+	
+	.next, .previous {
+		display: none;
+	}
+		
 }
 
 @media only screen and (max-width: 480px), only screen and (max-width: 800px) and (orientation: landscape) {
