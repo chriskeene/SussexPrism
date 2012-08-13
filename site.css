@@ -1898,6 +1898,18 @@ upwards using a relative posistion will leave a blnk space where they originally
 }
 
 
+
+/* the following were in a style attribute for the 'extended by juice' text */
+# extendedByJuice {
+	position: relative; 
+	display: block; 
+	clear: both; 
+	width: 100%; 
+	text-align: center;
+}
+
+
+/* following close bracket closes the atmedia screen section of css */
 }
 
 @media print {
@@ -1912,7 +1924,11 @@ upwards using a relative posistion will leave a blnk space where they originally
 		display: block !important;
 	}
 	
-	.next, .previous {
+	.next , .previous {
+		display: none;
+	}
+	
+	#extendedByJuice {
 		display: none;
 	}
 		
@@ -1929,4 +1945,10 @@ upwards using a relative posistion will leave a blnk space where they originally
 	#page #pageHeader div.tagLine {
 		line-height: 1.5;
 	}
+	
+	#extendedByJuice {
+		display: none;
+	}
 
+
+	/* no close bracket of final atmedia declaration required. prism adds it for us */

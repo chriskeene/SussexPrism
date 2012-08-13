@@ -7,7 +7,9 @@
 
 function extendedbyJuice(ju,overrideDiv){
 	var id = "extendedbyJuice";
-	var div = '<div id="extendedByJuice" style="position: relative; display: block; clear: both; width: 100%; text-align: center;">' +
+	// originally contained the following in a style attribute. now in css
+	// style="position: relative; display: block; clear: both; width: 100%; text-align: center;"
+	var div = '<div id="extendedByJuice">' +
 	'Extended by <a href="http://juice-project.org">The Juice Project</a></div>';
 	if(overrideDiv){
 		div = overrideDiv;
