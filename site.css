@@ -1765,6 +1765,47 @@ div.summarydetail {
 	max-height: 300px;
 }
 
+/************************************************************/
+/* Sussex Prism Homepage */
+
+/* boxes for messages */
+#homeContent .box {
+	float:left;
+	width: 230px;
+	height: 170px;
+	border: 1px solid white;
+	margin: 0px 10px 0px 10px;
+}
+
+/* don't show default search box. (PDF calls this searchForm) */
+#index #pageHeader #searchform{
+	display:none;
+}
+#index #pageHeader {
+	height: auto;
+}
+
+/* for the three boxes - Prism removes !important from css so these are not applied as they should above */
+#adviceBox div.swatch2, .swatch2bg {
+    background-color: #c2e6ef !important;
+}
+
+#adviceBox h4.swatch1, .swatch1bg {
+    background-color: #0ba0ca !important;
+}
+
+.feature {
+	width:250px;
+	float: left;
+	margin-right: 30px;
+	min-height: 150px;
+}
+
+#adviceBox {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
 
 /*************************************************************/
 /* Prism header links */
