@@ -35,6 +35,8 @@ $=jQuery=PRISM.jQuery;
 	// 1 we don't have branches. 2 added word 'currently'
 	$(".branches:contains('No copies available at branches')").text('No copies currently available');
 	
+	$("#itemControl").before('<h3 class="print_only">Printed from the University of Sussex Library catalogue</h3>');
+	
 	if(PRISM.mobile){
 		//code to run mobile essential extensions
 		$('#appTitle > a').text('University of Sussex Catalogue');
