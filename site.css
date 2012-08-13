@@ -1702,17 +1702,72 @@ body, #breadcrumbs, #footer {
 
 
 
-/*****************************************************************
+/**********************************************************************
  * Sussex Catalogue
  */
  
- /* over rides a prism default setting which knocks down the Sussex template */
- #page{
+ /************************************
+  * Sussex Catalogue - Template fixes
+  */
+ 
+/* over rides a prism default setting which knocks down the Sussex template */
+#page{
     top: 0px;
 }
 
+/* Links should not be underlined - unless hover */
+/* this reverses what is provided in the Sussex css files. */
+a:hover , #breadcrumbs a:hover {
+    text-decoration: underline;
+}
 
-/* for the Prism header links */
+a, #topnav a, #subnav a, #nav a, #breadcrumbs a {
+    text-decoration: none;
+}
+
+/* don't make Sussex site search box have bold labels */
+#header label {
+	font-weight:normal !important;
+} 
+
+/* the following were in a style attribute for the 'extended by juice' text */
+# extendedByJuice {
+	position: relative; 
+	display: block; 
+	clear: both; 
+	width: 100%; 
+	text-align: center;
+}
+
+/*****************************************************************/
+/* Sussex Prism Search box and breadcrumbs */
+
+/* put the search box in the empty gap left by the breadcrumbes (which, being moved 
+upwards using a relative posistion will leave a blnk space where they originally were) */
+#searchBox {
+	margin-top: 18px;
+}
+
+/* how much space the search box has around it */
+#pageHeader {
+	height:60px !important;
+}
+
+/* search box */
+#s, #searchsubmit {
+	font-size:1.1em;
+	line-height: 1.6em;
+}
+
+/* scometimes we get really long summaries in the marc record. this puts a limit on the size and adds a scroll box. */
+div.summarydetail {
+	overflow:auto;
+	max-height: 300px;
+}
+
+
+/*************************************************************/
+/* Prism header links */
 #headerLinks {
 	position:static;text-align:left;top:0;max-width:none;min-width:inherit;width:auto ; }
 	#headerLinks ul { position:static;right:0;width:auto; }
@@ -1726,8 +1781,8 @@ body, #breadcrumbs, #footer {
 	
 #headerLinks ul {
 	margin: 0;
-	padding: 0; }
-	
+	padding: 0; 
+}
 		
 #headerLinks ul.userLinks li {
 		border-left:none; 
@@ -1760,115 +1815,6 @@ body, #breadcrumbs, #footer {
 			color:#424753 ;
 			text-decoration:underline; 
 }
-				
-/* Hide one of the online resources links in catalogue records, reccommended by Captia */
-#details ul.eResourceLinks {display:none;}
-
-/* how much space the search box has around it */
-#pageHeader {
-	height:60px !important;
-}
-
-/* because without this it is a little too the left and too far down (with a shadown of where it should be */
-/* was 10px */
-#ppppage {
-	padding:1px !important;
-}
-
-/* search box */
-#s, #searchsubmit {
-	font-size:1.1em;
-	line-height: 1.6em;
-}
-
-/* scometimes we get really long summaries in the marc record. this puts a limit on the size and adds a scroll box. */
-div.summarydetail {
-	overflow:auto;
-	max-height: 300px;
-}
-
-/* used on the no result page, to show different search options */
-div.noresultbox {
-	width:200px;
-	border: 1px solid #CCC;
-	float:left;
-	padding:8px;
-	height:150px;
-	overflow: hidden;
-}
-div.noresultbox p {
-	font-size: 95%;
-}
-
-div.noresultbox:hover { 
-	background-color:#E1E8EB;
-}
-
-/* Links should not be underlined - unless hover */
-/* this reverses what is provided in the Sussex css files. */
-a:hover , #breadcrumbs a:hover {
-    text-decoration: underline;
-}
-
-a, #topnav a, #subnav a, #nav a, #breadcrumbs a {
-    text-decoration: none;
-}
-
-#header label {
-	font-weight:normal !important;
-	font-color:red !important;
-}
-
-/* show notes in item details in the standard font color */
-.Note  li {
-	color: #244857;
-}
-
-/* how to show the item availability information */
-ul.options h3 {
-	font-size: 1.1em;
-	padding-top:0px;
-}
-
-/* put the breadcrumbs straight after the header, and before search. */
-#page #breadCrumb {
-	ddfdisplay: inline;
-	left: 10px;
-	position: absolute;
-	top: 207px;
-}
-#breadCrumb span {
-	font-size: 0.8em;
-}
-
-/* unused */
-#searchBoxx {
-	display: inline;
-	left: 240px;
-	position: absolute;
-	top: 220px;
-}	
-
-/* put the search box in the empty gap left by the breadcrumbes (which, being moved 
-upwards using a relative posistion will leave a blnk space where they originally were) */
-#searchBox {
-	margin-top: 18px;
-}
-
-/* don't show branches */
-.branches {
-	display: none;
-}
-
-/* under when hovering over the save button, like all other clickable things */
-#page input.save:hover {
-	text-decoration: underline;
-}
-
-/* don't leave such a big gap after the summary of an item */
-#renderitem .item .summary {
-	margin: 0 0 0 0;
-}
 
 /* we want userlinks to look just like accessible links */
 #headerLinks .userLinks a {
@@ -1889,6 +1835,59 @@ upwards using a relative posistion will leave a blnk space where they originally
 	font-size:100%;
 	padding: 0 10px;
 }
+		
+
+/*********************************************************************************
+/* No Results page */
+/* used on the no result page, to show different search options */
+div.noresultbox {
+	width:200px;
+	border: 1px solid #CCC;
+	float:left;
+	padding:8px;
+	height:150px;
+	overflow: hidden;
+}
+div.noresultbox p {
+	font-size: 95%;
+}
+
+div.noresultbox:hover { 
+	background-color:#E1E8EB;
+}
+
+
+/*********************************************************************/
+/* Item information */
+
+/* Hide one of the online resources links in catalogue records, reccommended by Captia */
+#details ul.eResourceLinks {display:none;}
+
+/* show notes in item details in the standard font color */
+.Note  li {
+	color: #244857;
+}
+
+/* how to show the item availability information */
+ul.options h3 {
+	font-size: 1.1em;
+	padding-top:0px;
+}
+
+/* don't show branches */
+.branches {
+	display: none;
+}
+
+/* underline when hovering over the save button, like all other clickable things */
+#page input.save:hover {
+	text-decoration: underline;
+}
+
+/* don't leave such a big gap after the summary of an item */
+#renderitem .item .summary {
+	margin: 0 0 0 0;
+}
 
 /* this was in the javascript as a style attribute - but this was stopping us over-riding it for printing
    - because the style attribute has higher precedence. */
@@ -1898,15 +1897,6 @@ upwards using a relative posistion will leave a blnk space where they originally
 }
 
 
-
-/* the following were in a style attribute for the 'extended by juice' text */
-# extendedByJuice {
-	position: relative; 
-	display: block; 
-	clear: both; 
-	width: 100%; 
-	text-align: center;
-}
 
 
 /* following close bracket closes the atmedia screen section of css */
