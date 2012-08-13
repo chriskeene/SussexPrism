@@ -1900,6 +1900,12 @@ upwards using a relative posistion will leave a blnk space where they originally
 
 }
 
+@media print {
+	.rated {
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 480px), only screen and (max-width: 800px) and (orientation: landscape) {
 	/* don't show breadcrumbs on mobile interface (perhaps just on item pages? */
 	#page #breadCrumb {
