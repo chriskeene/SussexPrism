@@ -1765,6 +1765,17 @@ div.summarydetail {
 	max-height: 300px;
 }
 
+/* put the breadcrumbs straight after the header, and before search. */
+#page #breadCrumb {
+	left: 10px;
+	position: absolute;
+	top: 207px;
+}
+	  	
+#breadCrumb span {
+  font-size: 0.8em;
+}
+
 /************************************************************/
 /* Sussex Prism Homepage */
 
