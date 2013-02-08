@@ -1948,6 +1948,10 @@ ul.options h3 {
 	width: 100%;
 }
 
+td.holdings_local_holdings {
+	word-wrap: break-word;
+}
+
 
 
 
