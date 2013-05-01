@@ -14,9 +14,9 @@ $(function () {
     
     //load required extensions from local copy
     $.juice.loadExtensions('JuiceSimpleInsert','GBSEmbed','extendedbyJuice','AspireList','QuickLink','AspireListAdd');
-	$.juice.loadJs("http://prism.talis.com/sussex-ac-sandbox/assets/-/js/panels/juiceListPanel.js");
-    $.juice.loadJs("http://prism.talis.com/sussex-ac-sandbox/assets/-/js/panels/juiceBasicPanel.js");
-	$.juice.loadCss("http://prism.talis.com/sussex-ac-sandbox/assets/-/js/panels/juiceDefault.css");
+	$.juice.loadJs("http://prism.talis.com/sussex-ac/assets/-/js/panels/juiceListPanel.js");
+    $.juice.loadJs("http://prism.talis.com/sussex-ac/assets/-/js/panels/juiceBasicPanel.js");
+	$.juice.loadCss("http://prism.talis.com/sussex-ac/assets/-/js/panels/juiceDefault.css");
 
 	
     //when all are loaded run them
