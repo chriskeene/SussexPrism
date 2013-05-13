@@ -1908,6 +1908,28 @@ div.noresultbox:hover {
 	background-color:#E1E8EB;
 }
 
+/***************************************************************
+/* news boxes */
+
+.tryitbutton {
+	padding:5px;
+	display: inline-block;
+	background-color:white;
+	border:1px solid #aaaaaa;
+	font-size:1.4em;
+	font-weight: bold;
+}
+
+.tryitbutton:hover {
+	padding:5px;
+	display: inline-block;
+	background-color:yellow;
+	border:1px solid #aaaaaa;
+	font-size:1.4em;
+	font-weight: bold;
+}
+
+
 
 /*********************************************************************/
 /* Item information */
