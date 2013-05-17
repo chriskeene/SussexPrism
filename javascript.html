@@ -38,17 +38,20 @@ $=jQuery=PRISM.jQuery;
 	// when printing, include a message to say where this printout is from
 	$("#itemControl").before('<h3 class="print_only">Printed from the University of Sussex Library catalogue</h3>');
 	
-	if(PRISM.mobile){
+	// we want this to be the d
+	//if(PRISM.mobile){
 		//code to run mobile essential extensions
 		$('#appTitle > a').text('University of Sussex Catalogue');
 		// change mobile tag line
 		$(".tagLine").text('Welcome to the University of Sussex Library Catalogue.');
 		// if it's the homepage lets have extra text below search box... yes lets.
 		$('#index #page #pageContent').after('<p>search for books, journals and more.</p>'); 
-	}
-	else{
-		//code to run normally
-	}
+		// add voice search to the search box if using mobile
+		$('#s').attr('x-webkit-speech', "");
+	//}
+	//else{
+	//	//code to run normally
+	//}
 	
 });
 </script>
