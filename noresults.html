@@ -1,21 +1,17 @@
 <!-- <p>You can also try your search for "{{ query }}" on some other
 catalogues:</p>
 -->
-<!--
-<ul>
-<li><a href="http://copac.ac.uk/search?&any={{ query|url_encode }}">Search for "{{ query }}" on COPAC</a></li>
-<li><a href="http://explore.bl.uk/primo_library/libweb/action/search.do?mode=Basic&vid=BLVU1&vl(freeText0)={{ query|url_encode }}&fn=search&tab=local_tab&">
-Search for "{{ query }}" on the British Library OPAC</a></li>
-<li><a href="http://www.google.com/search?tbm=bks&q={{ query|
-url_encode }}">Search for "{{ query }}" on Google Books</a></li>
-</ul>
--->
+
+<a href="http://www.sussex.ac.uk/library/includes/link.php?NOTFOUNDhttp://sus-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/dlSearch.do?vid=CJKVIEW&query=any,contains,{{ query|url_encode }}&institution=SUSSEX&onCampus=false&group=GUEST" target="_blank">
+<div class="noresultbox flash" style="width:100%;height:60px;margin-bottom:10px;">
+<h2>Try your search "{{ query }}" on Library Search. Searches for books, articles, journals, and other academic sources.</h2>
+<p>Click here to see what results Library Search brings back for your search</p>
+
+</div>
+</a>
 
 
  
-<h3>Search our <a href="http://www.sussex.ac.uk/library/includes/link.php?NOTFOUNDhttp://primo-service.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?dscnt=0&frbg=&scp.scps=000000101&tab=default_tab&dstmp=1343824122259&srt=rank&ct=search&mode=Basic&dum=true&indx=1&vl(freeText0)={{ query|url_encode }}&fn=search&vid=44SUS_V1">Electronic Library for "{{ query }}"</a></h3>
-
-<p>Looking for an article? Use <a href="http://www.sussex.ac.uk/library/">Library Search</a> available from the Library homepage.</p>
 
 <p>If you're looking for an item which you think we should have you can <a href="http://www.sussex.ac.uk/library/contact/suggestabook">suggest we purchase it</a>. You can also place an <a href="http://www.sussex.ac.uk/library/ilr/">interlibrary request</a>.</p>
 
