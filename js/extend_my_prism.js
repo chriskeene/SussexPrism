@@ -13,7 +13,7 @@ $(function () {
     $.juice.setDebug(true);
     
     //load required extensions from local copy
-    $.juice.loadExtensions('JuiceSimpleInsert','GBSEmbed','extendedbyJuice','AspireList','QuickLink','AspireListAdd');
+    $.juice.loadExtensions('JuiceSimpleInsert','GBSEmbed','extendedbyJuice','AspireList','QuickLink','AspireListAdd', 'UsageHistory');
 	$.juice.loadJs("http://prism.talis.com/sussex-ac/assets/-/js/panels/juiceListPanel.js");
     $.juice.loadJs("http://prism.talis.com/sussex-ac/assets/-/js/panels/juiceBasicPanel.js");
 	$.juice.loadCss("http://prism.talis.com/sussex-ac/assets/-/js/panels/juiceDefault.css");
@@ -89,6 +89,9 @@ function itemPage(){
 		
 		// Add to Aspire 
 		new AspireListAdd('#footer','liblists.sussex.ac.uk','Add to Aspire Reading List');
+		
+		// show usage history
+		new UsageHistoryAdd('#footer','bibinfo.lib.sussex.ac.uk','Usage history');
     }  
 	timeMsg();  
 }
