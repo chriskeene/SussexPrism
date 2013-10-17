@@ -1892,6 +1892,12 @@ div.summarydetail {
 /*********************************************************************************
 /* No Results page */
 /* used on the no result page, to show different search options */
+
+/* I capita have changed their css which moved our results page off to the lefy. searchpanel seems to have a left-margin:-20em; */
+#searchaction #searchPanel {
+	margin-left:0em;
+}
+
 div.noresultbox {
 	width:200px;
 	border: 1px solid #CCC;
